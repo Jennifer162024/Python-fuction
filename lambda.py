@@ -1,11 +1,14 @@
-def myfunc(a,b):
-  return lambda a : a * n
-def myfuunc(c):
-    return lambda
-    
-mydoubler = myfunc(2)
+def math(a,b):
+    return lambda x,y: a * x + b * y
+def crear_lambda(a, b):
+    return lambda x, y: a * x + b * y
 
-print(mydoubler(11))
+import math
+def myfunc(a, b):
+    return lambda c: (-b + math.sqrt(b**2 - 4*a*c)) / (2*a)
+my_lambda = myfunc(2,4)
+resultado = my_lambda(-6)
+print(resultado)
 
 ## Crear una función que reciba como parametro a,b
 ## dentro de la función va a retornar una lambda que tenga los siguientes parametros:
